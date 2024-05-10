@@ -40,9 +40,11 @@ list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 # Dependencies
 # --------------
 # Eigen
-find_package(Eigen3 REQUIRED)
-include_directories (SYSTEM "${EIGEN3_INCLUDE_DIR}")
-set(Eigen_INCLUDE_DIRS ${EIGEN3_INCLUDE_DIR})
+# find_package(Eigen3 REQUIRED)
+# include_directories (SYSTEM "${EIGEN3_INCLUDE_DIR}")
+# set(Eigen_INCLUDE_DIRS ${EIGEN3_INCLUDE_DIR})
+include_directories(SYSTEM ../eigen/eigen-3.4.0)
+set(Eigen_INCLUDE_DIRS ../eigen/eigen-3.4.0)
 # --------------
 
 
